@@ -1,0 +1,14 @@
+<form [formGroup]="taskFormGroup" (ngSubmit)="onSubmit()">
+    <label>Título de la tarea</label>
+    <br/>
+    <input type="text" formControlName="title">
+    <br/><br/>
+    <label>Código de la tarea</label>
+    <br/>
+    <input type="number" formControlName="code">
+    <br/><br/>
+    <input type="date" formControlName="endDate">
+    <br/><br/>
+  
+    <button>Agregar Tarea!</button>
+  </form>
